@@ -7,6 +7,13 @@ sass:
     - _sass
     - node_modules
 
+  # style : nested (default), compact, compressed, expanded
+  #         :nested, :compact, :compressed, :expanded also works
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # on a typical twitter bootstrap stats are :
+  # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
+  style: compressed
+
 # Jekyll 3.3 started excluding the node_modules directory by default, so we have
 # to make sure it is included in the final site to be able to use its files:
 include:
@@ -14,4 +21,4 @@ include:
   - ./node_modules/popper.js/dist/umd/popper.min.js
   - ./node_modules/popper.js/dist/umd/popper.min.js.map
   - ./node_modules/bootstrap/dist/js/bootstrap.min.js
-  - .//node_modules/bootstrap/dist/js/bootstrap.min.js.map
+  - ./node_modules/bootstrap/dist/js/bootstrap.min.js.map
