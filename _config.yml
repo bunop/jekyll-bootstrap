@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/jekyll-bootstrap" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Jekyll Bootstrap Test Site" # the name of your site, e.g. ACME Corp.
 
 sass:
   load_paths:
@@ -13,12 +13,3 @@ sass:
   # on a typical twitter bootstrap stats are :
   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
   style: compressed
-
-# Jekyll 3.3 started excluding the node_modules directory by default, so we have
-# to make sure it is included in the final site to be able to use its files:
-include:
-  - ./node_modules/jquery/dist/jquery.min.js
-  - ./node_modules/popper.js/dist/umd/popper.min.js
-  - ./node_modules/popper.js/dist/umd/popper.min.js.map
-  - ./node_modules/bootstrap/dist/js/bootstrap.min.js
-  - ./node_modules/bootstrap/dist/js/bootstrap.min.js.map
