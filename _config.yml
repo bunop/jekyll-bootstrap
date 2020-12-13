@@ -1,3 +1,12 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+# Jekyll 3.3 started excluding the node_modules directory by default, so we have
+# to make sure it is included in the final site to be able to use its files:
+exclude: []
